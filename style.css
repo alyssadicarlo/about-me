@@ -1,0 +1,148 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    height: 100vh;
+    padding: 10%;
+    background-color: #FFEE93;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.header img {
+    width: 350px;
+    position: absolute;
+    right: 10%;
+}
+
+.scroll {
+    cursor: pointer;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+}
+
+svg #wheel {
+	animation: scroll ease 1.5s infinite;
+}
+
+.about-me {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about-card {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.card-body img {
+    float: left;
+}
+
+#popup {
+    display: none;
+    height: 100vh;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.popup-contents {
+    padding: 30px;
+    background-color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#popup h1 {
+    color: black;
+}
+
+.fade-left {
+    animation: left ease 1s normal;
+}
+
+.fade-right {
+    animation: right ease 1s normal;
+}
+
+.fade-bottom {
+    animation: bottom ease 1s normal;
+}
+
+@keyframes left {
+    0% {
+        transform: translateX(-500px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes right {
+    0% {
+        transform: translateX(calc(100% + 500px));
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes bottom {
+    0% {
+        transform: translateY(50px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes scroll {
+	0% {
+		transform: translateY(0);
+	}
+	30% {
+		transform: translateY(100px);
+	}
+}
+
+@media only screen and (max-width: 800px) {
+
+    #about-card {
+        width: 90%;
+    }
+
+    .intro {
+        width: 50%;
+    }
+
+    .header img {
+        width: 250px;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    img {
+        float: none;
+    }
+
+    #popup {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .fade-left, .fade-right, .fade-bottom {
+        animation: none;
+    }
+
+}
