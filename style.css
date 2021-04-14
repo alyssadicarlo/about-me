@@ -73,10 +73,6 @@ svg #wheel {
     animation: right ease 1s normal;
 }
 
-.fade-bottom {
-    animation: bottom ease 1s normal;
-}
-
 @keyframes left {
     0% {
         transform: translateX(-500px);
@@ -92,15 +88,6 @@ svg #wheel {
     }
     100% {
         transform: translateX(0);
-    }
-}
-
-@keyframes bottom {
-    0% {
-        transform: translateY(50px);
-    }
-    100% {
-        transform: translateY(0);
     }
 }
 
@@ -131,8 +118,31 @@ svg #wheel {
 
 @media only screen and (max-width: 600px) {
 
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header img {
+        position: relative;
+        right: 0px;
+    }
+
+    .intro {
+        width: 90%;
+    }
+
     img {
         float: none;
+    }
+
+    .scroll {
+        left: 45%;
+    }
+
+    .about-me {
+        margin-top: 150px;
+        margin-bottom: 150px;
     }
 
     #popup {
@@ -141,7 +151,7 @@ svg #wheel {
         align-items: center;
     }
 
-    .fade-left, .fade-right, .fade-bottom {
+    .fade-left, .fade-right {
         animation: none;
     }
 

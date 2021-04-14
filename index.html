@@ -24,14 +24,23 @@
                 </svg>
             </div>
         </div>
-        <div id="popup">
-            <div class="popup-contents">
-                <svg onclick="exit_function()" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
-                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
-                </svg>
-                <h1>Warning! This site is not optimized for mobile use. Please view on computer. Thanks :)</h1>
+        
+        <div id="popup" class="modal" tabindex="-1">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Warning!</h5>
+                  <button onclick="exit_function()" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>This website has not been completely optimized for mobile use. Please view on a laptop for the full experience. Thanks! 😊</p>
+                </div>
+                <div class="modal-footer">
+                  <button onclick="exit_function()" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
             </div>
-        </div>
+          </div>
         <div id="about" class="about-me">
             <div id="about-card" class="card text-center">
                 <div class="card-header">
