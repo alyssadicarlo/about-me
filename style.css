@@ -148,7 +148,6 @@ svg #wheel {
     #popup {
         display: flex;
         justify-content: center;
-        align-items: center;
     }
 
     .fade-left, .fade-right {
