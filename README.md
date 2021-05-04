@@ -5,3 +5,5 @@ This project was created for a prerequisite assignment for the Digital Crafts Ma
 Note: This site is not yet optimized for mobile use.
 
 ![screenshot](https://github.com/alyssadicarlo/about-me/blob/master/images/screenshot.png)
+
+Sean made me type this.
